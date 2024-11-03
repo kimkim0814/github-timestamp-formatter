@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Github timestamp formatter",
+  "version": "1.0.0",
+  "icons": {
+    "16": "logo/16.jpeg",
+    "48": "logo/48.jpeg",
+    "128": "logo/128.jpeg"
+  },
+  "description": "A simple extension to format Github timestamps",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
